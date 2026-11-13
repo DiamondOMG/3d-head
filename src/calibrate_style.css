@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: #121214;
+  color: #f0f0f0;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+#app {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 13px;
+  background: #252530;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.btn-back:hover {
+  color: #fff;
+  background: #323242;
+}
+
+header h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ff5252;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.badge.connected {
+  background: #10b981;
+  color: #fff;
+}
+
+.badge.disconnected {
+  background: #ef4444;
+  color: #fff;
+}
+
+.card {
+  background: #1e1e24;
+  border: 1px solid #2d2d38;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.card h4 {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #ff8a80;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+input[type="text"] {
+  flex: 1;
+  background: #2a2a34;
+  border: 1px solid #3d3d4d;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px 16px;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background: #ff5252;
+  color: #fff;
+  flex: 1;
+}
+
+.btn-secondary {
+  background: #333340;
+  color: #eee;
+  padding: 10px 14px;
+}
+
+.btn-danger-text {
+  background: transparent;
+  color: #ff6b6b;
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+.file-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.info-grid strong {
+  color: #fff;
+}
+
+.control-row {
+  margin-bottom: 14px;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+input[type="range"] {
+  width: 100%;
+  height: 6px;
+  accent-color: #ff5252;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#points_list {
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#points_list li {
+  background: #282834;
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.point-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.btn-del-point {
+  background: #ff4757;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+.backup-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  border-top: 1px dashed #333342;
+  padding-top: 12px;
+}
+
+.backup-group button, .backup-group label {
+  flex: 1;
+  text-align: center;
+}
